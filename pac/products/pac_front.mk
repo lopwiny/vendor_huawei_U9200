@@ -5,7 +5,7 @@ ifeq (pac_front,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_nav_xhdpi
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += device/huawei/front/overlay_pac
+DEVICE_PACKAGE_OVERLAYS += device/huawei/front/overlay_pac
 
 # PAC device overlay
 $(shell cp -f vendor/pac/prebuilt/common/bootanimation_framework/android-logo-mask_samsung-xhdpi.png frameworks/base/core/res/assets/images/android-logo-mask.png)
