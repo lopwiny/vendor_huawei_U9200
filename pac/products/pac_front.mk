@@ -2,7 +2,7 @@
 ifeq (pac_front,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_nav_xhdpi
+OVERLAY_TARGET := pa_front
 
 # AOKP device overlay
 DEVICE_PACKAGE_OVERLAYS += device/huawei/front/overlay_pac
