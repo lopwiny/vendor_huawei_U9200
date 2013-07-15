@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/gpslogd:system/bin/gpslogd \
   vendor/huawei/front/proprietary/bin/hostapd:system/bin/hostapd \
   vendor/huawei/front/proprietary/bin/load_oemlogo:system/bin/load_oemlogo \
-  vendor/huawei/front/proprietary/bin/rild:system/bin/rild \
   vendor/huawei/front/proprietary/bin/smc_pa_ctrl:system/bin/smc_pa_ctrl \
   vendor/huawei/front/proprietary/bin/uiautomator:system/bin/uiautomator
 
@@ -69,6 +68,7 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
   vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
   vendor/huawei/front/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
+  vendor/huawei/front/proprietary/lib/libOpenSLES.so:system/lib/libOpenSLES.so \
   vendor/huawei/front/proprietary/lib/libRedEye.so:system/lib/libRedEye.so \
   vendor/huawei/front/proprietary/lib/libaudience.so:system/lib/libaudience.so \
   vendor/huawei/front/proprietary/lib/libdomx.so:system/lib/libdomx.so \
@@ -79,11 +79,9 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libion.so:system/lib/libion.so \
   vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so \
   vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
-  vendor/huawei/front/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-  vendor/huawei/front/proprietary/lib/libril.so:system/lib/libril.so \
   vendor/huawei/front/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-  vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
-  vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so
+  vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so \
+  vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so
 
 # /vendor/bin
 PRODUCT_COPY_FILES += \
