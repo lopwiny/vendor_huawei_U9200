@@ -1,5 +1,5 @@
 # TSSI parameters not determined yet.
-# Viva, TSSI done @ 2011.12.22
+# Front, TSSI done @ 2011.12.22
 
 manfid=0x2d0
 prodid=0x0552
@@ -53,5 +53,5 @@ pacalath2g=180
 pacalidx2g1=55
 btc_params80=0
 #pacalpwr2g=13
-#add rssi for viva
+#add rssi for front
 rssi_offset=3
