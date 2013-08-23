@@ -139,4 +139,6 @@ PRODUCT_COPY_FILES += \
 # /xbin
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/xbin/kfmapp:system/xbin/kfmapp \
-  vendor/huawei/front/proprietary/xbin/bt_sco_app:system/xbin/bt_sco_app
+  vendor/huawei/front/proprietary/xbin/bt_sco_app:system/xbin/bt_sco_app \
+  vendor/huawei/front/proprietary/xbin/hciconfig:system/xbin/hciconfig \
+  vendor/huawei/front/proprietary/xbin/hcitool:system/xbin/hcitool
