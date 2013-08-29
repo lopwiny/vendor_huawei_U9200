@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/uiautomator:system/bin/uiautomator \
   vendor/huawei/front/proprietary/bin/bluetoothd:system/bin/bluetoothd \
   vendor/huawei/front/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
+  vendor/huawei/front/proprietary/bin/btld:system/bin/btld \
   vendor/huawei/front/proprietary/bin/hci_dev_state:system/bin/hci_dev_state \
   vendor/huawei/front/proprietary/bin/uim-sysfs:system/bin/uim-sysfs \
   vendor/huawei/front/proprietary/bin/wl:system/bin/wl
