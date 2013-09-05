@@ -51,15 +51,13 @@ PRODUCT_COPY_FILES += \
 
 #/lib/hw
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
-  vendor/huawei/front/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
   vendor/huawei/front/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
   vendor/huawei/front/proprietary/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+  vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
+  vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so
 
 # /lib/modules
