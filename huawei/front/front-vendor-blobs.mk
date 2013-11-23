@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/uiautomator:system/bin/uiautomator \
   vendor/huawei/front/proprietary/bin/bluetoothd:system/bin/bluetoothd \
   vendor/huawei/front/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-  vendor/huawei/front/proprietary/bin/btld:system/bin/btld \
   vendor/huawei/front/proprietary/bin/hci_dev_state:system/bin/hci_dev_state \
   vendor/huawei/front/proprietary/bin/uim-sysfs:system/bin/uim-sysfs \
   vendor/huawei/front/proprietary/bin/wl:system/bin/wl
@@ -60,6 +59,8 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so
 
+#  vendor/huawei/front/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+
 # /lib/modules
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko
@@ -89,7 +90,9 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
   vendor/huawei/front/proprietary/lib/libbluetoothd.so:system/lib/libbluetoothd.so \
   vendor/huawei/front/proprietary/lib/libchip_management.so:system/lib/libchip_management.so \
-  vendor/huawei/front/proprietary/lib/libfmradio.so:system/lib/libfmradio.so
+  vendor/huawei/front/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
+  vendor/huawei/front/proprietary/lib/libedid.so:system/lib/libedid.so \
+  vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so
 
 # /vendor/bin
 PRODUCT_COPY_FILES += \
@@ -134,10 +137,11 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
   vendor/huawei/front/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-  vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu_license.txt:system/vendor/lib/libbltsville_ticpu_license.txt \
-  vendor/huawei/front/proprietary/vendor/lib/libbltsville_gc2d.2.2.2.0.so:system/vendor/lib/libbltsville_gc2d.2.2.2.0.so
+  vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu_license.txt:system/vendor/lib/libbltsville_ticpu_license.txt
 
 # /xbin
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/xbin/kfmapp:system/xbin/kfmapp \
-  vendor/huawei/front/proprietary/xbin/bt_sco_app:system/xbin/bt_sco_app
+  vendor/huawei/front/proprietary/xbin/bt_sco_app:system/xbin/bt_sco_app \
+  vendor/huawei/front/proprietary/xbin/hciconfig:system/xbin/hciconfig \
+  vendor/huawei/front/proprietary/xbin/hcitool:system/xbin/hcitool
