@@ -16,17 +16,17 @@
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/IMCdownload_App:system/bin/IMCdownload_App \
   vendor/huawei/front/proprietary/bin/Injection_nv:system/bin/Injection_nv \
-  vendor/huawei/front/proprietary/bin/atcmdserver:system/bin/atcmdserver \
   vendor/huawei/front/proprietary/bin/akmd8975:system/bin/akmd8975 \
+  vendor/huawei/front/proprietary/bin/atcmdserver:system/bin/atcmdserver \
+  vendor/huawei/front/proprietary/bin/bluetoothd:system/bin/bluetoothd \
+  vendor/huawei/front/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
   vendor/huawei/front/proprietary/bin/glgps:system/bin/glgps \
   vendor/huawei/front/proprietary/bin/gpslogd:system/bin/gpslogd \
+  vendor/huawei/front/proprietary/bin/hci_dev_state:system/bin/hci_dev_state \
   vendor/huawei/front/proprietary/bin/hostapd:system/bin/hostapd \
   vendor/huawei/front/proprietary/bin/load_oemlogo:system/bin/load_oemlogo \
   vendor/huawei/front/proprietary/bin/smc_pa_ctrl:system/bin/smc_pa_ctrl \
   vendor/huawei/front/proprietary/bin/uiautomator:system/bin/uiautomator \
-  vendor/huawei/front/proprietary/bin/bluetoothd:system/bin/bluetoothd \
-  vendor/huawei/front/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-  vendor/huawei/front/proprietary/bin/hci_dev_state:system/bin/hci_dev_state \
   vendor/huawei/front/proprietary/bin/uim-sysfs:system/bin/uim-sysfs \
   vendor/huawei/front/proprietary/bin/wl:system/bin/wl
 
@@ -51,15 +51,13 @@ PRODUCT_COPY_FILES += \
 #/lib/hw
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
+  vendor/huawei/front/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
   vendor/huawei/front/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-  vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so
-
-#  vendor/huawei/front/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+  vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 # /lib/modules
 PRODUCT_COPY_FILES += \
@@ -78,21 +76,21 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libOpenSLES.so:system/lib/libOpenSLES.so \
   vendor/huawei/front/proprietary/lib/libRedEye.so:system/lib/libRedEye.so \
   vendor/huawei/front/proprietary/lib/libaudience.so:system/lib/libaudience.so \
-  vendor/huawei/front/proprietary/lib/libdomx.so:system/lib/libdomx.so \
-  vendor/huawei/front/proprietary/lib/libexif.so:system/lib/libexif.so \
-  vendor/huawei/front/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
-  vendor/huawei/front/proprietary/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
-  vendor/huawei/front/proprietary/lib/libion.so:system/lib/libion.so \
-  vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
-  vendor/huawei/front/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-  vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
-  vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so \
   vendor/huawei/front/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
   vendor/huawei/front/proprietary/lib/libbluetoothd.so:system/lib/libbluetoothd.so \
   vendor/huawei/front/proprietary/lib/libchip_management.so:system/lib/libchip_management.so \
-  vendor/huawei/front/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
+  vendor/huawei/front/proprietary/lib/libdomx.so:system/lib/libdomx.so \
   vendor/huawei/front/proprietary/lib/libedid.so:system/lib/libedid.so \
-  vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so
+  vendor/huawei/front/proprietary/lib/libexif.so:system/lib/libexif.so \
+  vendor/huawei/front/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+  vendor/huawei/front/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
+  vendor/huawei/front/proprietary/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
+  vendor/huawei/front/proprietary/lib/libion.so:system/lib/libion.so \
+  vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so \
+  vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
+  vendor/huawei/front/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+  vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
+  vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/bin
 PRODUCT_COPY_FILES += \
@@ -101,11 +99,11 @@ PRODUCT_COPY_FILES += \
 
 # /vendor/firmware
 PRODUCT_COPY_FILES += \
+  vendor/huawei/front/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_p2p.bin:system/vendor/firmware/fw_bcmdhd_p2p.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_test.bin:system/vendor/firmware/fw_bcmdhd_test.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
   vendor/huawei/front/proprietary/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
 
 # /vendor/lib/egl
@@ -123,12 +121,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
+  vendor/huawei/front/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_cpu.so:system/vendor/lib/libbltsville_cpu.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_gc2d.2.1.2.0.so:system/vendor/lib/libbltsville_gc2d.2.1.2.0.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_gc2d.so:system/vendor/lib/libbltsville_gc2d.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_hw2d.so:system/vendor/lib/libbltsville_hw2d.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu.2.1.0.0.so:system/vendor/lib/libbltsville_ticpu.2.1.0.0.so \
   vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu.so:system/vendor/lib/libbltsville_ticpu.so \
+  vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu_license.txt:system/vendor/lib/libbltsville_ticpu_license.txt \
   vendor/huawei/front/proprietary/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
@@ -136,12 +136,10 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
   vendor/huawei/front/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-  vendor/huawei/front/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-  vendor/huawei/front/proprietary/vendor/lib/libbltsville_ticpu_license.txt:system/vendor/lib/libbltsville_ticpu_license.txt
 
 # /xbin
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/xbin/kfmapp:system/xbin/kfmapp \
   vendor/huawei/front/proprietary/xbin/bt_sco_app:system/xbin/bt_sco_app \
   vendor/huawei/front/proprietary/xbin/hciconfig:system/xbin/hciconfig \
-  vendor/huawei/front/proprietary/xbin/hcitool:system/xbin/hcitool
+  vendor/huawei/front/proprietary/xbin/hcitool:system/xbin/hcitool \
+  vendor/huawei/front/proprietary/xbin/kfmapp:system/xbin/kfmapp
