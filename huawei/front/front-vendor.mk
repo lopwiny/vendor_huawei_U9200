@@ -18,3 +18,4 @@
 DEVICE_PACKAGE_OVERLAYS := vendor/huawei/front/overlay
 
 $(call inherit-product, vendor/huawei/front/front-vendor-blobs.mk)
+$(call inherit-product, vendor/huawei/front/front-vendor-media-blobs.mk)
