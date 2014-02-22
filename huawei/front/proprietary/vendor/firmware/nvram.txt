@@ -44,11 +44,11 @@ muxenab=0x10
 #sd_oobonly=1
 cckdigfilttype=26
 #20120301, add for 5.90.125.95.7
-pa0itssit=0x20
-noise_cal_ref_2g=53
-rfreg088=15
-iqlost1off2g=32
-txgaintbl=1
+pa0itssit=0x20                                                                   
+noise_cal_ref_2g=53                                                      
+rfreg088=15                                                                        
+iqlost1off2g=32                                                                 
+txgaintbl=1            
 pacalath2g=180
 pacalidx2g1=55
 btc_params80=0
