@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so \
   vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
   vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
+  vendor/huawei/front/proprietary/lib/libwvm.so:system/lib/libwvm.so \
   vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/bin
