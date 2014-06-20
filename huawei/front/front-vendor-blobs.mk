@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/hostapd:system/bin/hostapd \
   vendor/huawei/front/proprietary/bin/load_oemlogo:system/bin/load_oemlogo
 
-
 # etc/firmware
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
@@ -52,8 +51,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
   vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
-
-
 # /lib/modules
 PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko
@@ -71,11 +68,8 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/lib/libRedEye.so:system/lib/libRedEye.so \
   vendor/huawei/front/proprietary/lib/libaudience.so:system/lib/libaudience.so \
   vendor/huawei/front/proprietary/lib/libdomx.so:system/lib/libdomx.so \
-  vendor/huawei/front/proprietary/lib/libexif.so:system/lib/libexif.so \
-  vendor/huawei/front/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
   vendor/huawei/front/proprietary/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
   vendor/huawei/front/proprietary/lib/libion.so:system/lib/libion.so \
-  vendor/huawei/front/proprietary/lib/libjpeg.so:system/lib/libjpeg.so \
   vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
   vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
   vendor/huawei/front/proprietary/lib/libwvm.so:system/lib/libwvm.so \
@@ -91,7 +85,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_p2p.bin:system/vendor/firmware/fw_bcmdhd_p2p.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_test.bin:system/vendor/firmware/fw_bcmdhd_test.bin \
   vendor/huawei/front/proprietary/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
 
