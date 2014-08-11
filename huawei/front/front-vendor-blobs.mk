@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/bin/atcmdserver:system/bin/atcmdserver \
   vendor/huawei/front/proprietary/bin/glgps:system/bin/glgps \
   vendor/huawei/front/proprietary/bin/gpslogd:system/bin/gpslogd \
-  vendor/huawei/front/proprietary/bin/hostapd:system/bin/hostapd \
   vendor/huawei/front/proprietary/bin/load_oemlogo:system/bin/load_oemlogo
 
 # etc/firmware
@@ -85,7 +84,6 @@ PRODUCT_COPY_FILES += \
   vendor/huawei/front/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
   vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_test.bin:system/vendor/firmware/fw_bcmdhd_test.bin \
   vendor/huawei/front/proprietary/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
 
 # /vendor/lib/egl
