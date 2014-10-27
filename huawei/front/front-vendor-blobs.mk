@@ -12,99 +12,105 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+VENDOR_DIR := vendor/huawei/front/proprietary
+
 # bin
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/bin/IMCdownload_App:system/bin/IMCdownload_App \
-  vendor/huawei/front/proprietary/bin/Injection_nv:system/bin/Injection_nv \
-  vendor/huawei/front/proprietary/bin/akmd8975:system/bin/akmd8975 \
-  vendor/huawei/front/proprietary/bin/atcmdserver:system/bin/atcmdserver \
-  vendor/huawei/front/proprietary/bin/glgps:system/bin/glgps \
-  vendor/huawei/front/proprietary/bin/gpslogd:system/bin/gpslogd \
-  vendor/huawei/front/proprietary/bin/load_oemlogo:system/bin/load_oemlogo
+    $(VENDOR_DIR)/bin/IMCdownload_App:system/bin/IMCdownload_App \
+    $(VENDOR_DIR)/bin/Injection_nv:system/bin/Injection_nv \
+    $(VENDOR_DIR)/bin/akmd8975:system/bin/akmd8975 \
+    $(VENDOR_DIR)/bin/atcmdserver:system/bin/atcmdserver \
+    $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
+    $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd \
+    $(VENDOR_DIR)/bin/hostapd:system/bin/hostapd \
+    $(VENDOR_DIR)/bin/load_oemlogo:system/bin/load_oemlogo
+
+# etc/bluetooth
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/etc/bluetooth/BCM4330B1.hcd:system/etc/bluetooth/BCM4330B1.hcd
 
 # etc/firmware
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
-  vendor/huawei/front/proprietary/etc/firmware/TIInit_7.2.31.bts:system/etc/firmware/TIInit_7.2.31.bts \
-  vendor/huawei/front/proprietary/etc/firmware/TIInit_7.6.15.bts:system/etc/firmware/TIInit_7.6.15.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_rx_ch8_1283.2.bts:system/etc/firmware/fm_rx_ch8_1283.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_rx_init_1273.2.bts:system/etc/firmware/fm_rx_init_1273.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_tx_ch8_1273.1.bts:system/etc/firmware/fm_tx_ch8_1273.1.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_tx_ch8_1273.2.bts:system/etc/firmware/fm_tx_ch8_1273.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_tx_ch8_1283.2.bts:system/etc/firmware/fm_tx_ch8_1283.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fmc_ch8_1283.2.bts:system/etc/firmware/fmc_ch8_1283.2.bts \
-  vendor/huawei/front/proprietary/etc/firmware/fmc_init_1273.2.bts:system/etc/firmware/fmc_init_1273.2.bts
+    $(VENDOR_DIR)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
+    $(VENDOR_DIR)/etc/firmware/TIInit_7.2.31.bts:system/etc/firmware/TIInit_7.2.31.bts \
+    $(VENDOR_DIR)/etc/firmware/TIInit_7.6.15.bts:system/etc/firmware/TIInit_7.6.15.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_rx_ch8_1283.2.bts:system/etc/firmware/fm_rx_ch8_1283.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_rx_init_1273.2.bts:system/etc/firmware/fm_rx_init_1273.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_tx_ch8_1273.1.bts:system/etc/firmware/fm_tx_ch8_1273.1.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_tx_ch8_1273.2.bts:system/etc/firmware/fm_tx_ch8_1273.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_tx_ch8_1283.2.bts:system/etc/firmware/fm_tx_ch8_1283.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fm_tx_init_1273.2.bts:system/etc/firmware/fm_tx_init_1273.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fmc_ch8_1283.2.bts:system/etc/firmware/fmc_ch8_1283.2.bts \
+    $(VENDOR_DIR)/etc/firmware/fmc_init_1273.2.bts:system/etc/firmware/fmc_init_1273.2.bts
 
 # etc
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/etc/es305img.bin:system/etc/es305img.bin \
-  vendor/huawei/front/proprietary/etc/powervr.ini:system/etc/powervr.ini
+    $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
+    $(VENDOR_DIR)/etc/powervr.ini:system/etc/powervr.ini
 
 #/lib/hw
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-  vendor/huawei/front/proprietary/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
-  vendor/huawei/front/proprietary/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
+    $(VENDOR_DIR)/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
+    $(VENDOR_DIR)/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
+    $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
+    $(VENDOR_DIR)/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+    $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
+    $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 # /lib/modules
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/lib/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko
+    $(VENDOR_DIR)/lib/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko
 
 # lib
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
-  vendor/huawei/front/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
-  vendor/huawei/front/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
-  vendor/huawei/front/proprietary/lib/libRedEye.so:system/lib/libRedEye.so \
-  vendor/huawei/front/proprietary/lib/libaudience.so:system/lib/libaudience.so \
-  vendor/huawei/front/proprietary/lib/libdomx.so:system/lib/libdomx.so \
-  vendor/huawei/front/proprietary/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
-  vendor/huawei/front/proprietary/lib/libmm_osal.so:system/lib/libmm_osal.so \
-  vendor/huawei/front/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
-  vendor/huawei/front/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-  vendor/huawei/front/proprietary/lib/libxgold-ril.so:system/lib/libxgold-ril.so
+    $(VENDOR_DIR)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
+    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
+    $(VENDOR_DIR)/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
+    $(VENDOR_DIR)/lib/libRedEye.so:system/lib/libRedEye.so \
+    $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
+    $(VENDOR_DIR)/lib/libdomx.so:system/lib/libdomx.so \
+    $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
+    $(VENDOR_DIR)/lib/libmm_osal.so:system/lib/libmm_osal.so \
+    $(VENDOR_DIR)/lib/libtiutils.so:system/lib/libtiutils.so \
+    $(VENDOR_DIR)/lib/libwvm.so:system/lib/libwvm.so \
+    $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/bin
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/vendor/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
-  vendor/huawei/front/proprietary/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
+    $(VENDOR_DIR)/vendor/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
+    $(VENDOR_DIR)/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
 
 # /vendor/firmware
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
-  vendor/huawei/front/proprietary/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
+    $(VENDOR_DIR)/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+    $(VENDOR_DIR)/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
+    $(VENDOR_DIR)/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
+    $(VENDOR_DIR)/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
 
 # /vendor/lib/egl
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+    $(VENDOR_DIR)/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
 
 # /vendor/lib/hw
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/vendor/lib/hw/gralloc.omap4460.so:system/vendor/lib/hw/gralloc.omap4460.so \
-  vendor/huawei/front/proprietary/vendor/lib/hw/hwcomposer.omap4.so:system/vendor/lib/hw/hwcomposer.omap4.so
+    $(VENDOR_DIR)/vendor/lib/hw/gralloc.omap4460.so:system/vendor/lib/hw/gralloc.omap4460.so
 
 # /vendor/lib
 PRODUCT_COPY_FILES += \
-  vendor/huawei/front/proprietary/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-  vendor/huawei/front/proprietary/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
-  vendor/huawei/front/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so
+    $(VENDOR_DIR)/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(VENDOR_DIR)/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so
