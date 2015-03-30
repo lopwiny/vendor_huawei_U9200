@@ -50,10 +50,10 @@ PRODUCT_COPY_FILES += \
 
 #/lib/hw
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
     $(VENDOR_DIR)/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
     $(VENDOR_DIR)/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
-    $(VENDOR_DIR)/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
     $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
