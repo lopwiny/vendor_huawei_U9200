@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
+    $(VENDOR_DIR)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
     $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 # /lib/modules
