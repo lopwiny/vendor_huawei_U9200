@@ -22,8 +22,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/atcmdserver:system/bin/atcmdserver \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd \
-    $(VENDOR_DIR)/bin/hostapd:system/bin/hostapd \
-    $(VENDOR_DIR)/bin/load_oemlogo:system/bin/load_oemlogo
+    $(VENDOR_DIR)/bin/nvm_server:system/bin/nvm_server
+#    $(VENDOR_DIR)/bin/hostapd:system/bin/hostapd
 
 # etc/bluetooth
 PRODUCT_COPY_FILES += \
@@ -58,10 +58,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
     $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
-# /lib/modules
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko
-
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
@@ -78,13 +74,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/libmm_osal.so:system/lib/libmm_osal.so \
     $(VENDOR_DIR)/lib/libtiutils.so:system/lib/libtiutils.so \
-    $(VENDOR_DIR)/lib/libwvm.so:system/lib/libwvm.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
-
-# /vendor/bin
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
-    $(VENDOR_DIR)/vendor/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit
 
 # /vendor/firmware
 PRODUCT_COPY_FILES += \
@@ -114,4 +104,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so
+    $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
