@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd \
     $(VENDOR_DIR)/bin/nvm_server:system/bin/nvm_server
-#    $(VENDOR_DIR)/bin/hostapd:system/bin/hostapd
 
 # etc/bluetooth
 PRODUCT_COPY_FILES += \
