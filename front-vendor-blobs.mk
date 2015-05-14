@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libdomx.so:system/lib/libdomx.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/libmm_osal.so:system/lib/libmm_osal.so \
+    $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DIR)/lib/libtiutils.so:system/lib/libtiutils.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
@@ -107,9 +108,3 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-# ril
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
-    $(VENDOR_DIR)/bin/rild:system/bin/rild
