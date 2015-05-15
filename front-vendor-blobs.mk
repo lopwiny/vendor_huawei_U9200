@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
     $(VENDOR_DIR)/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
-    $(VENDOR_DIR)/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
     $(VENDOR_DIR)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
@@ -59,21 +58,9 @@ PRODUCT_COPY_FILES += \
 
 # lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.secure.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so:system/lib/libOMX.TI.DUCATI1.VIDEO.DECODER.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.H264E.so \
-    $(VENDOR_DIR)/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
-    $(VENDOR_DIR)/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
-    $(VENDOR_DIR)/lib/libRedEye.so:system/lib/libRedEye.so \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
-    $(VENDOR_DIR)/lib/libdomx.so:system/lib/libdomx.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
-    $(VENDOR_DIR)/lib/libmm_osal.so:system/lib/libmm_osal.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
-    $(VENDOR_DIR)/lib/libtiutils.so:system/lib/libtiutils.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/firmware
