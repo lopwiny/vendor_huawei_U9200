@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/atcmdserver:system/bin/atcmdserver \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd \
+    $(VENDOR_DIR)/bin/load_oemlogo:system/bin/load_oemlogo \
     $(VENDOR_DIR)/bin/nvm_server:system/bin/nvm_server
 
 # etc/bluetooth
@@ -60,6 +61,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
+    $(VENDOR_DIR)/lib/liboeminfo.so:system/lib/liboeminfo.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
