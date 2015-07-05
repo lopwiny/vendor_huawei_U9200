@@ -23,7 +23,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/flash_oemlogo:system/bin/flash_oemlogo \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd \
-    $(VENDOR_DIR)/bin/nvm_server:system/bin/nvm_server
+    $(VENDOR_DIR)/bin/nvm_server:system/bin/nvm_server \
+    $(VENDOR_DIR)/bin/rild:system/bin/rild
 
 # etc/bluetooth
 PRODUCT_COPY_FILES += \
