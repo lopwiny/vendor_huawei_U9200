@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/IMCdownload_App:system/bin/IMCdownload_App \
     $(VENDOR_DIR)/bin/Injection_nv:system/bin/Injection_nv \
     $(VENDOR_DIR)/bin/akmd8975:system/bin/akmd8975 \
-    $(VENDOR_DIR)/bin/atcmdserver:system/bin/atcmdserver \
     $(VENDOR_DIR)/bin/flash_oemlogo:system/bin/flash_oemlogo \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd
