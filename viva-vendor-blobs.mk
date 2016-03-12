@@ -44,6 +44,8 @@ PRODUCT_COPY_FILES += \
 # etc
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
+    $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
+    $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
     $(VENDOR_DIR)/etc/powervr.ini:system/etc/powervr.ini
 
 #/lib/hw
@@ -52,7 +54,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/audio.primary_vendor.omap4.so:system/lib/hw/audio.primary_vendor.omap4.so \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(VENDOR_DIR)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
-    $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
     $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
 # lib
