@@ -19,6 +19,7 @@
        arp-supl-use-apn="false"
        acSuplServer="supl.google.com"
        SuplPort="7275"
+       tlsCertPath="/system/bin/gps.cer"
        ReAidingIntervalSec="1200"
        SuplUT1Seconds="20"
        SuplUT2Seconds="20"
