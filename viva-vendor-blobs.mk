@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/IMCdownload_App:system/bin/IMCdownload_App \
     $(VENDOR_DIR)/bin/Injection_nv:system/bin/Injection_nv \
     $(VENDOR_DIR)/bin/akmd8975:system/bin/akmd8975 \
-    $(VENDOR_DIR)/bin/flash_oemlogo:system/bin/flash_oemlogo \
+    $(VENDOR_DIR)/bin/atcmdserver:system/bin/atcmdserver \
     $(VENDOR_DIR)/bin/glgps:system/bin/glgps \
     $(VENDOR_DIR)/bin/gpslogd:system/bin/gpslogd
 
@@ -59,9 +59,10 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
-    $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
-    $(VENDOR_DIR)/lib/liboeminf2.so:system/lib/liboeminf2.so \
+    $(VENDOR_DIR)/lib/libnv_public_interface.so:system/lib/libnv_public_interface.so \
+    $(VENDOR_DIR)/lib/liboeminfo.so:system/lib/liboeminfo.so \
+    $(VENDOR_DIR)/lib/liboeminfo_public_interface.so:system/lib/liboeminfo_public_interface.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
@@ -95,6 +96,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(VENDOR_DIR)/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
