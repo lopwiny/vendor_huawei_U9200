@@ -18,3 +18,6 @@
 #DEVICE_PACKAGE_OVERLAYS := vendor/huawei/viva/overlay
 
 $(call inherit-product, vendor/huawei/viva/viva-vendor-blobs.mk)
+
+PRODUCT_PACKAGES += \
+    GlobalDolbyEffect

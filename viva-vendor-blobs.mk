@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # etc
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/etc/dolby_config.xml:system/etc/dolby_config.xml \
     $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
     $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
@@ -55,14 +56,23 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(VENDOR_DIR)/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so
 
+#/lib/soundfx
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
+    $(VENDOR_DIR)/lib/soundfx/libdolbymobileeffect.so:system/lib/soundfx/libdolbymobileeffect.so
+
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
+    $(VENDOR_DIR)/lib/libdolbyaudioeffectnativeservice.so:system/lib/libdolbyaudioeffectnativeservice.so \
+    $(VENDOR_DIR)/lib/libdolbymobileaudioeffect_jni.so:system/lib/libdolbymobileaudioeffect_jni.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/libnv_public_interface.so:system/lib/libnv_public_interface.so \
     $(VENDOR_DIR)/lib/liboeminfo.so:system/lib/liboeminfo.so \
     $(VENDOR_DIR)/lib/liboeminfo_public_interface.so:system/lib/liboeminfo_public_interface.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
+    $(VENDOR_DIR)/lib/libspeexresampler.so:system/lib/libspeexresampler.so \
+    $(VENDOR_DIR)/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/firmware
