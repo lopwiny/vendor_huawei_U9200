@@ -19,8 +19,10 @@
 
 $(call inherit-product, vendor/huawei/viva/viva-vendor-blobs.mk)
 
+# Dolby
 PRODUCT_PACKAGES += \
-    GlobalDolbyEffect
+    GlobalDolbyEffect \
+    DolbyMobileAudioEffectService
 
 # Google Android Sync Bookmarks adapter
 PRODUCT_PACKAGES += \

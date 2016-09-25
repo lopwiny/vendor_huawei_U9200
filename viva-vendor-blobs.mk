@@ -59,7 +59,10 @@ PRODUCT_COPY_FILES += \
 #/lib/soundfx
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-    $(VENDOR_DIR)/lib/soundfx/libdolbymobileeffect.so:system/lib/soundfx/libdolbymobileeffect.so
+    $(VENDOR_DIR)/lib/soundfx/libdolbymobileeffect.so:system/lib/soundfx/libdolbymobileeffect.so \
+    $(VENDOR_DIR)/lib/soundfx/libqcbassboost.so:system/lib/soundfx/libqcbassboost.so \
+    $(VENDOR_DIR)/lib/soundfx/libqcreverb.so:system/lib/soundfx/libqcreverb.so \
+    $(VENDOR_DIR)/lib/soundfx/libqcvirt.so:system/lib/soundfx/libqcvirt.so
 
 # lib
 PRODUCT_COPY_FILES += \
