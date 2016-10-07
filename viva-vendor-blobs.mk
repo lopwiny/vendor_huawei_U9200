@@ -46,8 +46,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/etc/dolby_config.xml:system/etc/dolby_config.xml \
     $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
-    $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
-    $(VENDOR_DIR)/etc/powervr.ini:system/etc/powervr.ini
+    $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml
 
 #/lib/hw
 PRODUCT_COPY_FILES += \
@@ -89,31 +88,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
-# /vendor/lib/egl
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
-
-# /vendor/lib/hw
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/hw/gralloc.omap4460.so:system/vendor/lib/hw/gralloc.omap4460.so
-
 # /vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # /vendor/lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    $(VENDOR_DIR)/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
-    $(VENDOR_DIR)/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
+    $(VENDOR_DIR)/vendor/lib/libdrmmtkutil.so:system/vendor/lib/libdrmmtkutil.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
