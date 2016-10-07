@@ -83,18 +83,3 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
     $(VENDOR_DIR)/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
     $(VENDOR_DIR)/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
-
-# /vendor/lib/drm
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
-
-# /vendor/lib/mediadrm
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-# /vendor/lib
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    $(VENDOR_DIR)/vendor/lib/libdrmmtkutil.so:system/vendor/lib/libdrmmtkutil.so \
-    $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
