@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/liboeminfo_public_interface.so:system/lib/liboeminfo_public_interface.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DIR)/lib/libspeexresampler.so:system/lib/libspeexresampler.so \
-    $(VENDOR_DIR)/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
 # /vendor/firmware
