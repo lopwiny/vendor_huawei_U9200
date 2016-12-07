@@ -18,7 +18,3 @@
 #DEVICE_PACKAGE_OVERLAYS := vendor/huawei/viva/overlay
 
 $(call inherit-product, vendor/huawei/viva/viva-vendor-blobs.mk)
-
-# Google Android Sync Bookmarks adapter
-PRODUCT_PACKAGES += \
-    ChromeBookmarksSyncAdapter
