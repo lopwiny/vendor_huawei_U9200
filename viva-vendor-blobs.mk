@@ -43,6 +43,8 @@ PRODUCT_COPY_FILES += \
 
 # etc
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    $(VENDOR_DIR)/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
     $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml
