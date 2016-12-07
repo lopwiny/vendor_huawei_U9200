@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
 
 # etc
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/etc/dolby_config.xml:system/etc/dolby_config.xml \
     $(VENDOR_DIR)/etc/es305img.bin:system/etc/es305img.bin \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
     $(VENDOR_DIR)/etc/gpsconfig.xml:system/etc/gpsconfig.xml
@@ -57,7 +56,6 @@ PRODUCT_COPY_FILES += \
 
 #/lib/soundfx
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/soundfx/libdolbymobileeffect.so:system/lib/soundfx/libdolbymobileeffect.so \
     $(VENDOR_DIR)/lib/soundfx/libqcbassboost.so:system/lib/soundfx/libqcbassboost.so \
     $(VENDOR_DIR)/lib/soundfx/libqcreverb.so:system/lib/soundfx/libqcreverb.so \
     $(VENDOR_DIR)/lib/soundfx/libqcvirt.so:system/lib/soundfx/libqcvirt.so
@@ -65,8 +63,6 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
-    $(VENDOR_DIR)/lib/libdolbyaudioeffectnativeservice.so:system/lib/libdolbyaudioeffectnativeservice.so \
-    $(VENDOR_DIR)/lib/libdolbymobileaudioeffect_jni.so:system/lib/libdolbymobileaudioeffect_jni.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/libnv_public_interface.so:system/lib/libnv_public_interface.so \
     $(VENDOR_DIR)/lib/liboeminfo.so:system/lib/liboeminfo.so \
