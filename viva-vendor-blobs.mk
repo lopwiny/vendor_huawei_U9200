@@ -58,10 +58,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/soundfx/libqcbassboost.so:system/lib/soundfx/libqcbassboost.so \
     $(VENDOR_DIR)/lib/soundfx/libqcreverb.so:system/lib/soundfx/libqcreverb.so \
-    $(VENDOR_DIR)/lib/soundfx/libqcvirt.so:system/lib/soundfx/libqcvirt.so
+    $(VENDOR_DIR)/lib/soundfx/libqcvirt.so:system/lib/soundfx/libqcvirt.so \
+    $(VENDOR_DIR)/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so
 
 # lib
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/libnv_public_interface.so:system/lib/libnv_public_interface.so \
