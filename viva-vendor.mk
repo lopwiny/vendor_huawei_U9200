@@ -21,4 +21,4 @@ $(call inherit-product, vendor/huawei/viva/viva-vendor-blobs.mk)
 
 # Viper for Android 2.4.0.1
 PRODUCT_PACKAGES += \
-    ViPER4Android_FX.apk
+    ViPER4Android_FX
