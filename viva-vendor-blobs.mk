@@ -74,6 +74,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DIR)/lib/libxgold-ril.so:system/lib/libxgold-ril.so
 
+# /media
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/media/bootanimation.zip:system/media/bootanimation.zip
+
 # /vendor/firmware
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
